@@ -1,0 +1,12 @@
+﻿@implements ILayoutComponent
+
+    <NavMenu />
+    <main class='section'>
+        <section class="container">
+            @Body
+        </section>
+    </main>
+
+    @functions {
+    public RenderFragment Body { get; set; }
+    }
